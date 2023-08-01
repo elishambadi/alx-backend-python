@@ -1,7 +1,5 @@
 #!usr/bin/env python3
-"""
-TestCase for Utils
-"""
+
 import unittest
 from parameterized import parameterized
 
