@@ -6,7 +6,7 @@ import random
 import time
 
 
-async def wait_random(max_delay: int = 10):
+async def wait_random(max_delay: int = 10) -> float:
     """Runs an async routine"""
     sleep_time = random.random() * max_delay
     time.sleep(sleep_time)
