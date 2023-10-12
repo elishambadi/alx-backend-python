@@ -1,14 +1,16 @@
+#!/usr/bin/env python3
+
 from typing import List
 """AsyncIO Functions"""
+wait_random = __import__('0-basic_async_syntax').wait_random
+
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """
-    Asynchronous routine that spawns wait_random n times with the specified max_delay.
-    
+    Runs wait_random n times asynch with the specified max_delay.
     Args:
         n (int): The number of times to call wait_random.
         max_delay (int): The maximum delay in seconds for each call.
-    
     Returns:
         List[float]: The list of delays in ascending order.
     """
